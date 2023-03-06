@@ -1,0 +1,14 @@
+[{
+  "projectUrl": "https://discordapp.com/users/182236545187708929",
+  "provider": "LovinLife",
+  "name": "Avuna Thralls",
+  "description": "Automatically spawns thrawls",
+  "id": "avunathralls-plugin",
+  "releases": [{
+    "date": "2023-03-06",
+    "sha512sum": "82E2AA177CC8740162CDBD141410BE25F81D8B364DDB84F25C313F3FC67A7B9B2AB3C5E6D48134132DFD6924C8B8810C683F4ECBB8489887C10503073B5B770E",
+    "version": "0.0.1",
+    "url": "https://raw.githubusercontent.com/LovinLifee/DeviousPlugins/master/avuna-thralls-0.0.1.jar",
+    "requires": "1.0.16-EXPERIMENTAL"
+  }]
+}]
