@@ -9,43 +9,29 @@ buildscript {
 
 plugins {
     `java-library`
-    checkstyle
     kotlin("jvm") version "1.6.21"
 }
 
-project.extra["GithubUrl"] = "https://github.com/unethicalite/unethicalite-plugins-release"
-project.extra["GithubUserName"] = "unethicalite"
-project.extra["GithubRepoName"] = "unethicalite-plugins-release"
+project.extra["GithubUrl"] = "https://github.com/LovinLifee/DeviousPlugins"
+project.extra["GithubUserName"] = "LovinLifee"
+project.extra["GithubRepoName"] = "DeviousPlugins"
 
 apply<BootstrapPlugin>()
 
 allprojects {
     group = "net.unethicalite"
 
-    project.extra["PluginProvider"] = "unethicalite"
-    project.extra["ProjectSupportUrl"] = "https://discord.gg/WTvTbSPknJ"
+    project.extra["PluginProvider"] = "LovinLife"
+    project.extra["ProjectSupportUrl"] = "https://discordapp.com/users/182236545187708929"
     project.extra["PluginLicense"] = "3-Clause BSD License"
 
     apply<JavaPlugin>()
     apply(plugin = "java-library")
     apply(plugin = "kotlin")
-    apply(plugin = "checkstyle")
 
     repositories {
         mavenCentral()
         mavenLocal()
-        maven {
-            url = uri("https://repo.unethicalite.net/releases/")
-            mavenContent {
-                releasesOnly()
-            }
-        }
-        maven {
-            url = uri("https://repo.unethicalite.net/snapshots/")
-            mavenContent {
-                snapshotsOnly()
-            }
-        }
     }
 
     dependencies {
